@@ -1,21 +1,29 @@
 import React, { Component } from 'react'
 import photos from './photos.json'
+import {Link} from 'react-router-dom'
 
 class PhotoList extends Component {
   render() {
+    const category = this.props.match.params.category
+    const categoryData = photos[this.props.match.params.category]
+
     return (
       <>
-        {photos[this.props.getThing].photos.map((photo, index) => {
-          return (
-            <li className="photo-list-sm" key={index}>
-              <p>{photo.title}</p>
-              <a href="#">
-                <img src={photo.imageURL} alt={this.props.getThing} />
-              </a>
-            </li>
-          )
-        })}
-      </>
+      <Link to="/" alt="home">Home</Link>
+      
+      <ul className="photolist">
+          {categoryData.photos.map((photo, index) =>{
+            return(
+              <li key={index}>
+              <Link to={`/${category}/${index}`}>
+                <p>{photo.title}</p>
+                  <img src={photo.imageURL} alt={photo.title} />
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+        </>
     )
   }
 }

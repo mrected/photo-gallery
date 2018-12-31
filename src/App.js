@@ -1,19 +1,22 @@
 import React, { Component } from 'react'
-import Category from './Category'
+import {BrowserRouter as Router,  Route } from 'react-router-dom'
 import PhotoList from './PhotoList'
-import photos from './photos.json'
 import PhotoDetail from './PhotoDetail'
+import CategoryList from './CategoryList';
 
 class App extends Component {
   render() {
     return (
       <>
-        {/* <h1>Photo Gallery</h1> */}
-        {/* <Category /> */}
-        <h1>Pandas</h1>
-        <PhotoList getThing={'pandas'} />
-
-        <PhotoDetail getPhoto={'pandas'} />
+        
+        <Router>
+          <>
+            <h1>Photo Gallery</h1>
+            <Route exact path="/" component = {CategoryList}/>
+            <Route exact path="/:category" component = {PhotoList} />
+            <Route path="/:category/:index" component = {PhotoDetail} />
+          </>
+        </Router>
       </>
     )
   }
