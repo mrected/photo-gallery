@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import photos from './photos.json'
+import photos from './newphotos.json'
 import {Link} from 'react-router-dom'
 
 class PhotoList extends Component {

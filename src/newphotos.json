@@ -1,0 +1,35 @@
+{
+    "supercars": {
+      "title": "Supercars",
+      "description": "A supercar (also referred to as an exotic) is a luxury, high-performance sports car or grand tourer.[1][2] The term is used in marketing by automakers for unusual and expensive vehicles, and has been used to refer to different sorts of cars ",
+      "photos": [
+        {
+          "title": "Koenigsegg One:1",
+          "imageURL": "https://www.koenigsegg.com/wp-content/uploads/2014/11/Koenigsegg_One1_Front_02.jpg",
+          "sourceURL": "https://www.koenigsegg.com/one1/"
+        },
+        {
+          "title": "Mclaren 570",
+          "imageURL": "https://st.motortrend.com/uploads/sites/10/2015/09/2016-Mclaren-570S-front-three-quarter.jpg?interpolation=lanczos-none&fit=around|660:439",
+          "sourceURL": "https://www.motortrend.com/cars/mclaren/570/2016/"
+        }
+      ]
+    },
+    "classiccars": {
+      "title": "Classic Cars",
+      "description": "According to Muscle Cars, a book written by Peter Henshaw, a \"muscle car\" is \"a product of the American car industry adhering to the hot rodder's philosophy of taking a small car and putting a large-displacement engine in it.",
+      "photos": [
+        {
+          "title": "1970 Chevelle",
+          "imageURL": "https://imgix.ranker.com/user_node_img/666/13300031/original/chevrolet-chevelle-ss-454-automobile-model-photo-u3?w=650&q=50&fm=jpg&fit=crop&crop=faces",
+          "sourceURL": "https://www.ranker.com/list/best-muscle-cars/richard-rowe"
+        },
+        {
+          "title": "1970 Superbird",
+          "imageURL": "https://moneyinc.com/wp-content/uploads/2018/07/1970-Plymouth-Hemi-Superbird-750x419.jpg",
+          "sourceURL": "https://moneyinc.com/the-10-best-muscle-cars-of-the-1970s/"
+        }
+      ]
+    }
+  }
+  

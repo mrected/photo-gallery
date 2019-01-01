@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 
-import photos from './photos.json'
+import photos from './newphotos.json'
 
 
 class PhotoDetail extends Component {
