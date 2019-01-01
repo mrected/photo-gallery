@@ -6,6 +6,7 @@ import photos from './newphotos.json'
 
 class CategoryList extends Component {
   render() {
+    console.log(photos.classiccars.photos[0].imageURL)
     return (
       <>
       <Link to="/" alt="home">Home</Link>
@@ -13,7 +14,12 @@ class CategoryList extends Component {
           {Object.keys(photos).map(category => {
             return (
               <li key={category}>
-              <Link to={`/${category}`}>{photos[category].title}</Link>
+                <p>
+                  <Link to={`/${category}`}>
+                  <img src={photos[category].photos[0].imageURL} alt={photos[category].photos[0].title} width="150px"/><br />
+                    {photos[category].title}
+                  </Link>
+                </p>
               </li>
               
             )
